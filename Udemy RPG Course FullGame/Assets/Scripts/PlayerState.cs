@@ -1,12 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class PlayerState
 {
-    
-    
     protected PlayerStateMachine stateMachine;
     protected Player player;
 

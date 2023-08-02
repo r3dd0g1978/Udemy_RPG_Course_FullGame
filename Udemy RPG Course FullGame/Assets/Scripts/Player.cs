@@ -1,12 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed = 10.0f;
-
+    public float jumpForce = 10.0f;
 
     #region Components
     public Animator anim { get; private set; }
@@ -31,7 +29,7 @@ public class Player : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         rb = GetComponent<Rigidbody2D>();
-       stateMachine.Initialize(idleState);
+        stateMachine.Initialize(idleState);
     }
 
     private void Update()
