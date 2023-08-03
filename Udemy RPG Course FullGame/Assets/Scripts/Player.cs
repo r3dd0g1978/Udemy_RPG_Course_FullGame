@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
         idleState = new PlayerIdleState(this, stateMachine, "Idle");
         moveState = new PlayerMoveState(this, stateMachine, "Move");
         jumpState = new PlayerJumpState(this, stateMachine, "Jump");
+        airState = new PlayerAirState(this, stateMachine, "Jump");
     }
 
     private void Start()
